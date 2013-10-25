@@ -18,7 +18,7 @@
  * @param	fileName The name of the file to parse
  * @return	none
  */
-void parseIniFile(char *fileName);
+void parseIniFile(std::string fileName);
 
 /**
  * If you are finished with the config item, use this function to cleanup the results
