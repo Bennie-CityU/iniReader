@@ -17,11 +17,11 @@ ConfigItems* iniItem[1024];
 
 int i = 0;
 
-void parseIniFile(char *fileName)
+void parseIniFile(std::string fileName)
 {
 	std::string optionValue;
 	ifstream infile;
-	infile.open(fileName);
+	infile.open(fileName.c_str());
 
 	//Does the file exist?
 	if (infile.is_open() != true)
